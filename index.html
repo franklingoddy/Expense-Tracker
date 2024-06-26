@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Expense Tracker</h1>    
+    <div class="container">
+        <h3>Your Balance</h3>
+        <h4 id="Balance">₦0.00</h4>
+        <div class="inc-exp-container">
+            <div class="inc">
+                <h4>Income</h4>
+                <p class="total-income">₦0.00</p>
+            </div>
+            <div class="exp">
+                <h4>Expense</h4>
+                <p class="total-expense">₦0.00</p>
+            </div>
+        </div>
+        <h3>History</h3>
+        <ul class="list">
+            <!-- <li class="plus"><button class="delete-btn">x</button> Salary <span>+₦500</span></li> -->
+        </ul>      
+        <h3>Add New Transaction Here</h3>
+        <form id="form">
+            <!-- Transaction description div -->
+            <div class="form-control">
+                <label for="desc">Transaction Description</label>
+                <input type="text" id="desc" placeholder="Enter transaction description">
+            </div>
+            <!-- Transaction amount div -->
+            <div class="form-control">
+                <label for="amount">Transaction Amount <br> (negative - expense; positive - income)</label>
+                <input type="number" id="amount" placeholder="Enter transaction amount">
+            </div>
+            <button class="addTransactionBtn">Add Transaction</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
